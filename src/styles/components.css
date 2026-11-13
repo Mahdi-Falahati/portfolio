@@ -1,0 +1,143 @@
+.box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+}
+
+.box:hover {
+  border-color: var(--accent);
+}
+
+.box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.box p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 0.2rem 0.55rem;
+  border-radius: 5px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  border-left: 2px solid var(--line);
+  list-style: none;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.4rem;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -1.72rem;
+  top: 0.55rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+[dir='rtl'] .timeline {
+  padding: 0 1.2rem 0 0;
+  border-right: 2px solid var(--line);
+  border-left: 0;
+}
+
+[dir='rtl'] .timeline li::before {
+  right: -1.72rem;
+  left: auto;
+}
+
+.timeline strong {
+  display: block;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.nda {
+  border-left: 3px solid var(--accent);
+}
+
+.nda dl {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.45rem 0.8rem;
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+}
+
+.nda dt {
+  padding-top: 0.15rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.nda dd {
+  margin: 0;
+}
+
+.redact {
+  display: inline-block;
+  height: 0.85em;
+  margin-left: 0.4rem;
+  border-radius: 2px;
+  background: var(--fg);
+  vertical-align: middle;
+}
+
+.todo {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.learning {
+  max-width: 42rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: 8px;
+  background: var(--accent-soft);
+}
+
+.learning p {
+  margin: 0;
+}
+
+.contact ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact .big {
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  word-break: break-all;
+}
